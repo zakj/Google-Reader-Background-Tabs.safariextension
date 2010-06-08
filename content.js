@@ -1,5 +1,5 @@
 document.addEventListener('keypress', function (event) {
-    if (event.which === 118) {  // 118: 'v'
+    if (event.which === 118 && !event.ctrlKey && !event.metaKey) {  // 118: 'v'
         var current = document.getElementById('current-entry');
         if (current === null) {
             return;
