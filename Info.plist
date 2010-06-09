@@ -7,13 +7,13 @@
 	<key>CFBundleDisplayName</key>
 	<string>Google Reader Background Tabs</string>
 	<key>CFBundleIdentifier</key>
-	<string>cx.nox.googlereaderbackgroundtabs</string>
+	<string>cx.nox.safari.googlereaderbackgroundtabs</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Global Page</key>
@@ -30,8 +30,8 @@
 		</dict>
 		<key>Whitelist</key>
 		<array>
-			<string>http://*.google.com/reader/view*</string>
-			<string>https://*.google.com/reader/view*</string>
+			<string>http://*/reader/view*</string>
+			<string>https://*/reader/view*</string>
 		</array>
 	</dict>
 	<key>Description</key>
@@ -42,19 +42,15 @@
 	<dict>
 		<key>Website Access</key>
 		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>*.google.com</string>
-			</array>
 			<key>Include Secure Pages</key>
 			<true/>
 			<key>Level</key>
-			<string>Some</string>
+			<string>All</string>
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
 	<string>http://bitbucket.org/zakj/greader-bgtabs/raw/tip/Manifest.plist</string>
 	<key>Website</key>
-	<string>http://nox.cx/google-reader-background-tabs</string>
+	<string>http://bitbucket.org/zakj/greader-bgtabs</string>
 </dict>
 </plist>

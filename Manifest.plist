@@ -7,14 +7,14 @@
      <dict>
        <key>CFBundleIdentifier</key>
        <string>cx.nox.safari.googlereaderbackgroundtabs</string>
-       <key>Team Identifier</key
+       <key>Team Identifier</key>
        <string>QWE2UZ4U42</string>
        <key>CFBundleVersion</key>
-       <string>2</string>
+       <string>3</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.1</string>
+       <string>1.2</string>
        <key>URL</key>
-       <string>http://bitbucket.org/zakj/greader-bgtabs/downloads/greader-bgtabs-1.1.safariextz</string>
+       <string>http://bitbucket.org/zakj/greader-bgtabs/downloads/greader-bgtabs-1.2.safariextz</string>
      </dict>
    </array>
 </dict>
