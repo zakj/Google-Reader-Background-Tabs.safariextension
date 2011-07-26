@@ -4,6 +4,15 @@
 // Reader path itself is still managed by the extension whitelist.  False
 // positives shouldn't cause too much trouble.
 if (document.location.host.indexOf('.google.') !== -1) {
+    // Request the shortcut key setting from the global script; this injected
+    // script lacks access to the extension settings object.
+    var shortcutKey = 'v'.charCodeAt(0);
+    safari.self.tab.dispatchMessage('getSettingValue', 'key');
+    safari.self.addEventListener('message', function (event) {
+        if (event.name === 'settingValueIs')
+            shortcutKey = event.message.charCodeAt(0);
+    }, false);
+
     document.addEventListener('keypress', function (event) {
         // Ignore keypresses on some common form elements.
         var tag = event.target.tagName;
@@ -11,8 +20,8 @@ if (document.location.host.indexOf('.google.') !== -1) {
             return;
         }
 
-        // Catch 'v', but not ctrl-v or cmd-v.
-        if (event.which === 118 && !event.ctrlKey && !event.metaKey) {
+        // Catch the shortcut key, but ignore modified key presses.
+        if (event.which === shortcutKey && !event.ctrlKey && !event.metaKey) {
             var current = document.getElementById('current-entry');
             if (!current) {
                 return;
