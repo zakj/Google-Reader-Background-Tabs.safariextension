@@ -10,11 +10,11 @@
        <key>Team Identifier</key>
        <string>QWE2UZ4U42</string>
        <key>CFBundleVersion</key>
-       <string>3</string>
+       <string>4</string>
        <key>CFBundleShortVersionString</key>
-       <string>1.2</string>
+       <string>1.3</string>
        <key>URL</key>
-       <string>http://bitbucket.org/zakj/greader-bgtabs/downloads/greader-bgtabs-1.2.safariextz</string>
+       <string>http://zakj.github.com/Google-Reader-Background-Tabs.safariextension/Google-Reader-Background-Tabs.safariextz</string>
      </dict>
    </array>
 </dict>
